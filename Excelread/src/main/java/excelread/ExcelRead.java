@@ -15,7 +15,7 @@ public class ExcelRead
 	static XSSFSheet sh;
 	public static String readstringdata(int i, int j) throws IOException
 	{
-		f = new FileInputStream("C:\\Users\\HP\\OneDrive\\Desktop\\Excelread.xlsx");
+		f = new FileInputStream("C:\\MavenExcel\\Excelread.xlsx");
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet("Sheet1");
 		Row r = sh.getRow(i);
@@ -24,7 +24,7 @@ public class ExcelRead
 	}
 	public static String readintegerdata(int i,int j) throws IOException
 	{
-		f = new FileInputStream("C:\\Users\\HP\\OneDrive\\Desktop\\Excelread.xlsx");
+		f = new FileInputStream("C:\\MavenExcel\\Excelread.xlsx");
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet("Sheet1");
 		Row r = sh.getRow(i);
